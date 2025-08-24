@@ -586,13 +586,26 @@
         .stanford-logo::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23b83a4b" width="100" height="100"/><polygon fill="white" points="20,80 50,20 80,80"/><rect fill="%23b83a4b" x="35" y="55" width="30" height="25"/></svg>');
-            background-size: cover;
-            background-position: center;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 30px solid white;
+        }
+
+        .stanford-logo::after {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 15px;
+            background: #8C1515;
+            border-radius: 0 0 5px 5px;
         }
 
         .stanford-text {
@@ -603,6 +616,86 @@
             text-align: center;
             line-height: 1.1;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin-top: 5px;
+        }
+
+        .microsoft-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #0078D4, #106EBE);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .microsoft-logo::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #F25022 25%, #7FBA00 25% 50%, #00A4EF 50% 75%, #FFB900 75%);
+            background-size: 25px 25px;
+        }
+
+        .ms-text {
+            position: absolute;
+            bottom: 8px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        .appathon-trophy {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 2.5rem;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .appathon-trophy::before {
+            content: '🏆';
+            font-size: 2.5rem;
+        }
+
+        .event-badge {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+        }
+
+        .event-number {
+            font-size: 1.8rem;
+            line-height: 1;
+            margin-bottom: 2px;
+        }
+
+        .event-text {
+            font-size: 0.6rem;
+            line-height: 1;
         }
 
         .cert-name {
@@ -792,9 +885,10 @@
             <h1>Venkateswara Chowdary Daddala</h1>
             <p class="subtitle">ServiceNow Application Specialist</p>
             <p class="description">
-                Passionate ServiceNow professional with 4+ years of experience in healthcare technology solutions. 
-                Specialized in ITSM, HRSD, Service Portal development, and clinical applications. 
-                Currently enhancing patient care delivery at EHealth Queensland.
+                ServiceNow professional with over 3.5 years of experience in designing, configuring, and optimizing ServiceNow
+                solutions. Proficient in ITSM, CMDB, ITOM, HRSD and Service portal modules with a strong background in scripting
+                using JavaScript, Glide API, and web technologies. Skilled in agile practices and integrating REST/SOAP APIs with
+                proven ability to enhance user experiences and deliver innovative IT solutions.
             </p>
             <div class="cta-buttons">
                 <a href="#about" class="btn btn-primary">
@@ -814,7 +908,7 @@
             <div class="about-content">
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number">4+</span>
+                        <span class="stat-number">3.5+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
@@ -822,16 +916,16 @@
                         <span class="stat-label">ServiceNow Certifications</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">15+</span>
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Major Implementations</span>
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I am a dedicated ServiceNow professional with extensive experience in designing, configuring, and optimizing ServiceNow solutions for healthcare and enterprise environments.</p>
+                    <p>I am a dedicated ServiceNow professional with over 3.5 years of experience in designing, configuring, and optimizing ServiceNow solutions for healthcare and enterprise environments. Proficient in ITSM, CMDB, ITOM, HRSD and Service portal modules with strong scripting capabilities in JavaScript, Glide API, and web technologies.</p>
                     
-                    <p>Currently serving as a ServiceNow Application Specialist at EHealth Queensland, I specialize in developing comprehensive clinical applications with custom widgets, healthcare-specific workflows, and patient care systems.</p>
+                    <p>Currently serving as a ServiceNow Application Specialist at EHealth Queensland, I specialize in developing comprehensive clinical applications with custom widgets, healthcare-specific workflows, and patient care systems. My work focuses on translating complex clinical workflows into functional Service Portal configurations while ensuring compliance with healthcare standards.</p>
                     
-                    <p>My expertise spans across ITSM, CMDB, ITOM, HRSD, and Service Portal modules, with strong scripting skills in JavaScript and Glide API. I hold multiple ServiceNow certifications and recently completed my Master of Science in Data Science from La Trobe University, combining traditional ServiceNow expertise with cutting-edge analytics.</p>
+                    <p>My expertise spans across all major ServiceNow modules with proven ability to enhance user experiences, ensure platform stability, and deliver innovative IT solutions aligned with business objectives. I hold multiple ServiceNow certifications and recently completed my Master of Science in Data Science from La Trobe University, combining traditional ServiceNow expertise with cutting-edge analytics and data science capabilities.</p>
                 </div>
             </div>
         </div>
@@ -925,15 +1019,31 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <div class="timeline-date">Apr 2024 - Jun 2024</div>
+                        <h3 class="job-title">NextGen Intern</h3>
+                        <div class="company">ServiceNow - Melbourne, VIC</div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Participated in comprehensive ServiceNow internship program to refresh and enhance professional skills</li>
+                                <li>Engaged in hands-on training and mentorship sessions to deepen platform functionality understanding</li>
+                                <li>Collaborated with senior team members on real-world ServiceNow projects and configuration tasks</li>
+                                <li>Contributed to development of ServiceNow solutions focusing on ITSM modules and best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
                         <div class="timeline-date">Jul 2021 - Oct 2022</div>
                         <h3 class="job-title">Program Analyst - ServiceNow</h3>
                         <div class="company">Cognizant Technology Services - Bengaluru, India</div>
                         <div class="job-description">
                             <ul>
                                 <li>Designed and customized Service Portal widgets to enhance user experience</li>
-                                <li>Successfully integrated third-party systems using REST/SOAP APIs</li>
-                                <li>Managed critical incidents and implemented change requests per ITIL practices</li>
-                                <li>Performed impact analysis during system upgrades and patch installations</li>
+                                <li>Successfully integrated third-party systems using REST/SOAP APIs and IntegrationHub</li>
+                                <li>Managed critical incidents and implemented change requests per ITIL practices and SLAs</li>
+                                <li>Performed impact analysis and rigorous testing during system upgrades and patch installations</li>
+                                <li>Participated in agile methodologies including sprint planning and daily stand-ups</li>
                             </ul>
                         </div>
                     </div>
