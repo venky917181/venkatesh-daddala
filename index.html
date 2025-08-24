@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venkateswara Chowdary Daddala - ServiceNow Professional</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -758,22 +758,41 @@
         }
 
         .social-links a {
-            width: 40px;
-            height: 40px;
-            background: #1a1a1a;
-            color: #888888;
+            width: 50px;
+            height: 50px;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            border: 1px solid #333333;
+            border: 2px solid #444444;
             transition: all 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .social-links a.email {
+            background: #ffffff;
+            color: #333333;
+            border-color: #cccccc;
+        }
+
+        .social-links a.phone {
+            background: #00d4aa;
+            color: #ffffff;
+            border-color: #00b894;
+        }
+
+        .social-links a.linkedin {
+            background: #0077B5;
+            color: #ffffff;
+            border-color: #005885;
         }
 
         .social-links a:hover {
-            background: #00d4aa;
-            color: #0a0a0a;
-            border-color: #00d4aa;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         footer p {
@@ -857,7 +876,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
-            <div class="logo">VD</div>
+            <div class="logo"></div>
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -885,7 +904,7 @@
             <h1>Venkateswara Chowdary Daddala</h1>
             <p class="subtitle">ServiceNow Application Specialist</p>
             <p class="description">
-                ServiceNow professional with 4 years of experience in designing, configuring, and optimizing ServiceNow
+                ServiceNow professional with over 3.5 years of experience in designing, configuring, and optimizing ServiceNow
                 solutions. Proficient in ITSM, CMDB, ITOM, HRSD and Service portal modules with a strong background in scripting
                 using JavaScript, Glide API, and web technologies. Skilled in agile practices and integrating REST/SOAP APIs with
                 proven ability to enhance user experiences and deliver innovative IT solutions.
@@ -908,20 +927,20 @@
             <div class="about-content">
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number">4+</span>
+                        <span class="stat-number">3.5+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">5+</span>
+                        <span class="stat-number">6</span>
                         <span class="stat-label">ServiceNow Certifications</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">3+</span>
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Major Implementations</span>
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I am a dedicated ServiceNow professional with 4 years of experience in designing, configuring, and optimizing ServiceNow solutions for healthcare and enterprise environments. Proficient in ITSM, CMDB, ITOM, HRSD and Service portal modules with strong scripting capabilities in JavaScript, Glide API, and web technologies.</p>
+                    <p>I am a dedicated ServiceNow professional with over 3.5 years of experience in designing, configuring, and optimizing ServiceNow solutions for healthcare and enterprise environments. Proficient in ITSM, CMDB, ITOM, HRSD and Service portal modules with strong scripting capabilities in JavaScript, Glide API, and web technologies.</p>
                     
                     <p>Currently serving as a ServiceNow Application Specialist at EHealth Queensland, I specialize in developing comprehensive clinical applications with custom widgets, healthcare-specific workflows, and patient care systems. My work focuses on translating complex clinical workflows into functional Service Portal configurations while ensuring compliance with healthcare standards.</p>
                     
@@ -1280,17 +1299,14 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="mailto:venkateswarachowdarydaddala@gmail.com">
-                    <i class="fas fa-envelope"></i>
+                <a href="mailto:venkateswarachowdarydaddala@gmail.com" title="Email" class="email">
+                    ✉
                 </a>
-                <a href="tel:+610470254891">
-                    <i class="fas fa-phone"></i>
+                <a href="tel:+610470254891" title="Phone" class="phone">
+                    📞
                 </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-github"></i>
+                <a href="https://www.linkedin.com/in/venkateswara-chowdary-daddala/" target="_blank" title="LinkedIn" class="linkedin">
+                    in
                 </a>
             </div>
             <p>&copy; 2025 Venkateswara Chowdary Daddala. All rights reserved.</p>
