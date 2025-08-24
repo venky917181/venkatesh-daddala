@@ -114,6 +114,25 @@
             text-align: center;
             z-index: 2;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #00d4aa;
+            margin-bottom: 2rem;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 212, 170, 0.4);
         }
 
         .hero-content h1 {
@@ -550,6 +569,42 @@
             letter-spacing: 1px;
         }
 
+        .stanford-logo {
+            width: 80px;
+            height: 80px;
+            background: #8C1515;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stanford-logo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23b83a4b" width="100" height="100"/><polygon fill="white" points="20,80 50,20 80,80"/><rect fill="%23b83a4b" x="35" y="55" width="30" height="25"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .stanford-text {
+            z-index: 2;
+            position: relative;
+            font-weight: bold;
+            font-size: 0.7rem;
+            text-align: center;
+            line-height: 1.1;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
         .cert-name {
             color: #ffffff;
             font-weight: 600;
@@ -647,6 +702,11 @@
                 font-size: 2.5rem;
             }
 
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
             .about-content {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -720,6 +780,15 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <!-- Replace this src with your actual photo -->
+            <img src="your-photo.jpg" alt="Venkateswara Chowdary Daddala" class="profile-image" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            
+            <!-- Fallback if image doesn't load -->
+            <div class="profile-image" style="display: none; background: linear-gradient(135deg, #00d4aa, #16213e); align-items: center; justify-content: center; font-size: 3rem; font-weight: bold; color: white;">
+                VD
+            </div>
+            
             <h1>Venkateswara Chowdary Daddala</h1>
             <p class="subtitle">ServiceNow Application Specialist</p>
             <p class="description">
@@ -871,67 +940,4 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured <span>Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">End-to-End ServiceNow Implementation</h3>
-                        <div class="project-subtitle">Enterprise ITSM & CMDB Solution</div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            Successfully led the implementation of ITSM and CMDB modules for a global client, 
-                            improving service delivery and asset management processes across the organization.
-                        </p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> ServiceNow ITSM, CMDB, Workflow Designer, Business Rules
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">HRSD Module Deployment</h3>
-                        <div class="project-subtitle">HR Service Delivery Platform</div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            Deployed comprehensive HRSD module creating workflows to streamline onboarding 
-                            and employee service processes, while integrating HR tools with ServiceNow.
-                        </p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> ServiceNow HRSD, Integration Hub, Flow Designer, Service Portal
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">48in48 Global Event</h3>
-                        <div class="project-subtitle">Nonprofit Web Development Initiative</div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">
-                            Volunteered for the 48in48 global event, designing and developing websites for 
-                            nonprofit organizations worldwide and managing ticketing systems.
-                        </p>
-                        <div class="project-tech">
-                            <strong>Technologies:</strong> HTML, CSS, JavaScript, Web Design, Event Management Systems
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications & <span>Achievements</span></h2>
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <div style="font-size: 3rem; color: #
+    </section
